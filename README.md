@@ -4,7 +4,7 @@ Uses Java 12
 
 * Design
 
-    
+    https://github.com/ramysh/trustline/blob/master/trustline-design.jpg
 
 * Clone
 
@@ -20,13 +20,18 @@ Uses Java 12
 * Run
 
     
-    Server A (runs on 8080) 
+    Server A (runs on 8080)
+     
     rpurigella-mbp-15:trustline-payment-server rpurigella$ mvn spring-boot:run -Dspring.config.name=alice
     
+    
     Server B (runs on 8081)
+    
     rpurigella-mbp-15:trustline-payment-server rpurigella$ mvn spring-boot:run -Dspring.config.name=bob
     
+    
     Client
+    
     rpurigella-mbp-15:trustline-payment-client rpurigella$ mvn exec:java
     
     
