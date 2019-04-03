@@ -2,7 +2,7 @@
 
 <b>Uses Java 12</b>
 
-## Design
+## Design diagram
 
    Please go through the diagram here
    
