@@ -6,7 +6,7 @@
 
    Please go through the diagram here
    
-   https://github.com/ramysh/trustline/blob/master/trustline-design.jpg
+   https://github.com/ramysh/trustline/blob/master/trustline-design-diagram.jpg
 
 ## Clone
 
@@ -68,3 +68,9 @@ https://github.com/ramysh/trustline/blob/master/trustline-user-service-impl/src/
   * Sends the same requests over 30 threads from Server B to A, but doesnt send the last one.
  
 * The final balance at each server is verified to correctly reflect the TransferRequest's sent to both servers
+
+##### User Service (user lookup service)
+
+* Currently the user is hard coded and the implementation is just embedded in the client. 
+* But the idea is that it can be its own stand alone service and the payment servers will register when they start up.
+ 
