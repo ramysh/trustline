@@ -73,4 +73,7 @@ https://github.com/ramysh/trustline/blob/master/trustline-user-service-impl/src/
 
 * Currently the user is hard coded and the implementation is just embedded in the client. 
 * But the idea is that it can be its own stand alone service and the payment servers will register when they start up.
- 
+
+##### Unit tests
+* trustline-payment-service-impl has good unit test coverage.
+* Improvements - The controller in trustline-payment-service-impl, trustline-http need unit tests.
