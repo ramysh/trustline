@@ -80,3 +80,4 @@ https://github.com/ramysh/trustline/blob/master/trustline-user-service-impl/src/
 ##### Improvements 
 * The controller in trustline-payment-service-impl, trustline-http need unit tests.
 * Dependency management can be improved to remove all the versions in each pom.
+* Exception handling in the payment service can be extended with multiple error codes for different scenarios.
