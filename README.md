@@ -21,17 +21,17 @@
 
 ## Run
 
-   #####Server A (runs on 8080)
+#####Server A (runs on 8080)
      
     rpurigella-mbp-15:trustline-payment-server rpurigella$ mvn spring-boot:run -Dspring.config.name=alice
     
     
-   #####Server B (runs on 8081)
+#####Server B (runs on 8081)
     
     rpurigella-mbp-15:trustline-payment-server rpurigella$ mvn spring-boot:run -Dspring.config.name=bob
     
     
-   #####Client
+#####Client
     
     rpurigella-mbp-15:trustline-payment-client rpurigella$ mvn exec:java
     
