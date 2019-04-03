@@ -76,4 +76,7 @@ https://github.com/ramysh/trustline/blob/master/trustline-user-service-impl/src/
 
 ##### Unit tests
 * trustline-payment-service-impl has good unit test coverage.
-* Improvements - The controller in trustline-payment-service-impl, trustline-http need unit tests.
+
+##### Improvements 
+* The controller in trustline-payment-service-impl, trustline-http need unit tests.
+* Dependency management can be improved to remove all the versions in each pom.
