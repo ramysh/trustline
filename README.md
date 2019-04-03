@@ -1,6 +1,6 @@
 # trustline
 
-####Uses Java 12
+<b>Uses Java 12</b>
 
 ## Design
 
@@ -49,13 +49,22 @@
 
 ## Additional Info
 
-The server ports for alice and bob are in
+##### Ports
+* The server ports for alice and bob are in
 
 https://github.com/ramysh/trustline/blob/master/trustline-payment-server/src/main/resources/alice.properties
 
 https://github.com/ramysh/trustline/blob/master/trustline-payment-server/src/main/resources/bob.properties
 
 
-The user service is currently hardcoded, so of you change the ports they run on, you have to change them here as well
+* The user service is currently hardcoded, so of you change the ports they run on, you have to change them here as well
 
 https://github.com/ramysh/trustline/blob/master/trustline-user-service-impl/src/main/resources/user.service.properties
+
+##### Integration tests
+
+* Concurrently does the following 
+  * Sends a series of 300 TransferRequest's over 30 threads from Server A to B
+  * Sends the same requests over 30 threads from Server B to A, but doesnt send the last one.
+ 
+* The final balance at each server is verified to correctly reflect the TransferRequest's sent to both servers
